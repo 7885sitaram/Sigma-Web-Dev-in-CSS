@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Overflow</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box{
+            height: 250px;
+            width: 150px;
+            border: 3px solid red;
+            margin: 50px;
+            overflow: scroll;
+            /* in auto used for if overflow appear than apply scroll */
+            /* overflow: auto; */
+            /*  white-space: nowrap is for horizontal scroll */
+            /* white-space: nowrap; */
+
+            /* text-overflow: ellipsis; */
+
+            /* overflow: hidden; */
+
+            overflow-x: hidden;
+            overflow-y: scroll;
+
+            overflow-wrap: break-word;
+            word-break: break-all;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maxime sit voluptatibus dignissimos dolores nam ipsa accusamus officiis illo nulla. Dolores accusamus laudantium harum omnis, ad expedita. Quisquam nisi nesciunt qui! Labore velit, magni ad eaque impedit doloribus itaque dolorem ea illum quidem sed blanditiis?</div>
+</body>
+</html>

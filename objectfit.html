@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit</title>
+
+    <style>
+
+        .container{
+            height: 435px;
+            width: 488px;
+            border: 3px solid red;
+
+
+            background-image: url("https://img.freepik.com/free-photo/medium-shot-woman-wearing-headphones_23-2149818230.jpg?t=st=1721459222~exp=1721462822~hmac=66dc65d07861520daf16e50cf11170cc6eb1043c4ec70ab19bac5425b6592a7a&w=996");
+
+            background-position: center center;
+
+            /* you can see the img is repeat so we use  no repeat property */
+            background-image: url(nature.jpeg);
+            background-repeat: no-repeat;
+            background-repeat: repeat-x;
+        }
+
+        /* object fit need height and width */
+
+        img{
+            height: 435px;
+            width: 488px;
+
+            /* cover adjust aspect ration context of height width of img */
+            object-fit: cover;
+
+            /* if set img proper use contain */
+            object-fit: contain;
+
+            /* so the space is exist so we can control this space using object position */
+            object-position: top right;
+
+            /* right left , top bottom */
+            object-position: 10px 20px;
+
+            /* /by default property */
+            /* object-fit: fill; */
+
+
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div>
+            <!-- <img src="imges.avif" alt=""> -->
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+</head>
+<style>
+    /* div{ 
+        /* color: red;          /*Element selector
+        background: yellow; 
+    } */
+
+    .red{
+        color: red;           /*Class selector*/
+        background: yellow;   
+    }
+
+    #jigs{
+        color: red;           /*ID selector*/
+        background:green;
+    }
+
+    div > p {
+        color: aqua;         /*Child selector (direct p in div )*/
+        background: brown;
+    }
+
+    div h1 {
+        color: red;          /*Descendant selector (undirected to div)*/
+        background: yellowgreen;
+    }
+
+    [data-x=a]{
+        color: aqua;         /*attribute selector*/
+        background: goldenrod;
+    }
+
+    *{
+        margin: 0;             /*Universal selector (apply whole page)*/
+        padding:0;
+    }
+
+    /*Pseudo selector  */ 
+
+    a:link{
+        color:green;
+    }
+
+    a:visited{
+        color: red;
+    }
+
+    a:active{
+        background: yellow;
+    }
+
+    a:hover{
+        background: blue;
+    }
+
+    p:nth-child(){
+        background: pink;
+    }
+
+</style>
+
+
+
+<body>
+    <div class="red">this is div</div>
+
+    <div id="jigs">this is another div</div>
+
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, ratione.</p>
+    </div>
+
+    <div>
+        <article>
+            <h1 data-x="a">this is me</h1>
+        </article>
+    </div>
+
+    <a href="https://www.google.com">google</a> <br>
+    <a href="https://www.snapchat.com">snapchat</a>
+    <a href="https:www.instagram.com">xyz.com</a>
+
+
+ 
+    
+</body>
+</html>

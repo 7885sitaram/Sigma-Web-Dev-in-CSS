@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greed</title>
+    <style>
+
+
+        .container{
+            border: 3px solid green;
+            display: grid;
+
+            /* this is use for gap between column and row */
+            /* grid-template-columns: [first]120px [second]100px; */
+            /* grid-template-rows: [first]100px [second]100px [third]100px; */
+
+
+         }
+
+        .iteam{
+
+            height: 70px;
+            width: 70px;
+            border: 3px solid red;
+        }
+
+        /* .iteam4{ */
+            /* grid row and column is adjust the position and overlap other box */
+            /* grid-row: 1/2; */
+            /* grid-row: first/second; */
+            /* grid-column: 1/2; */
+        /* } */
+
+        /* method 2 */
+
+           .container{
+            border: 3px solid green;
+            display: grid;
+            height: 80vh;
+
+            grid-template-columns: 1fr 2fr 1fr;
+            /* grid-template-columns: repeat(4 , 1fr); */
+            grid-template-columns: repeat(4, minmax(100px , 1fr));
+            gap: 30px;
+            row-gap: 10px;
+            column-gap: 25px;
+            justify-items: center;
+            align-items: center;
+            
+            
+            
+
+           
+
+        
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="iteam iteam1">1</div>
+        <div class="iteam iteam2">2</div>
+        <div class="iteam iteam3">3</div>
+        <div class="iteam iteam4">4</div>
+        <div class="iteam iteam5">5</div>
+    </div>
+</body>
+</html>

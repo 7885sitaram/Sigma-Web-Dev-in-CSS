@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms </title>
+
+    <style>
+
+        .container{
+            height: 80vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+            
+        
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background: aquamarine;
+            border: 5px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+            /* rotate property */
+            transform: rotate(40deg);
+            transform: rotate(0.25turn);
+            transform: rotate(0.5turn);
+
+            transform: rotateX(40deg);
+            transform: rotateX(90deg);
+            transform: rotateY(60deg);
+            transform: rotateZ(10deg);
+
+            /* scale property */
+            /* in scale is size 1.6 time bigger than actual size */
+            transform: scale(1.6);
+            transform: scaleX(1.2);
+            transform: scaley(1.2);
+           
+            /* skew property */
+
+            transform: skew(20deg);
+            transform: skewx(20deg);
+            transform: skewy(20deg);
+            
+            /* translate property */
+
+            transform: translate(200px);
+            transform: translatey(50px);
+            transform: translatez(50px);
+
+            transform: translateX(250px) translateY(100px) skew(20deg);
+
+            /* origion property */
+
+            transform: rotate(0.125turn);
+            transform-origin: 50%  50%;
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box tr">Box 1</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIZING</title>
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        /* font-size: 12px; */
+    }
+
+    /* html{
+        font-size: 12px;
+    } */
+
+    .box{
+        box-sizing: border-box;
+        border: 2px solid red;
+        /* width: 1488px; */
+        width: 100vw; /* vw (view width) adjust the port size, responsive sizing */ 
+        background: aqua;
+    }
+    .red{
+        box-sizing: border-box;
+        border: 2px solid red;
+        width: 80vw;
+        background: aquamarine;
+        margin: 23px auto;   /* auto margin use for center the value, only apply for block element not for inline element */
+
+        height: 80vh; /* view height adjust height responcevly */
+
+        font-size: 20px;
+    }
+
+    .red p{
+        font-size: 3em;  /* em use like multiply ex. 20px of 3 em is 60px */
+    }
+
+    .yellow{
+        box-sizing: border-box;
+        border: 2px solid red;
+        background: aqua;
+        width: 80vw;
+        height: 50vh;
+        margin: 23px auto;
+        font-size: 20px;
+
+
+    }
+
+    .yellow p{
+        font-size: 2rem;  /*rem is use for multiply of size of root element */
+    }
+
+    .jigs{
+        box-sizing: border-box;
+        border: 2px solid red;
+        background: aqua;
+        /* width: 100vmin; */
+        width: 80vw;
+        min-height: 40vh;  /* contain min height also have min width  */
+        margin: 23px auto;
+        font-size: 20px;
+    }
+
+
+    .xyz{
+        border: 3px solid red;
+        background: aqua;
+        width: 80vw;
+        min-height: 50vh;
+        margin: 25px auto;
+        font-size: 25px;
+        word-break: break-all;
+    }
+
+    .xyz > div{  /*in this apply on div of .xyz */
+        border: 3px solid green;
+        width: 50%;
+    }                         /* in width % is apply in element content not body */
+
+    .xyz > div > div {  /*in this apply on div of div */
+
+        border: 3px solid blue;
+        margin: 4px;
+        width: 50%;
+
+    }
+
+</style>
+
+
+<body>
+
+    <div class="box">this is a box</div>
+    <div class="red">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, facere error! Quasi vitae facilis cumque aspernatur numquam, consequatur corporis voluptatum ad in sequi id vel dolorem incidunt deserunt quo eligendi?</p></div>
+
+    <div class="yellow"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quod sapiente maiores libero temporibus, ipsum laboriosam consequuntur repellat consectetur excepturi kdhiuaerghiuhiuhiu iehiuhiughiu3w ygriuhg8p9 a8g yu89gy 89yg 8793wy g87yg89 fhhth 5rhj </p></div> 
+    
+    <div class="jigs"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, laboriosam aperiam doloremque alias dolorem iste ipsam rem? Odit dignissimos corrupti blanditiis architecto, sequi aspernatur natus nihil ullam voluptatem, ducimus nam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, odit? Cum neque culpa numquam exercitationem. Possimus consectetur ipsa tenetur expedita omnis explicabo nam. Eius quo ut sunt culpa est nostrum dicta ullam esse explicabo ipsam minus, tempora fugiat! Aliquam maxime saepe exercitationem reiciendis blanditiis beatae sed, eaque ut impedit dignissimos.</p></div>
+
+
+    <div class="xyz">
+
+        <div> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia ab blanditiis voluptatem consequuntur. Sint ipsam iusto natus, facere sapiente laboriosam!
+
+        <div> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, iusto et doloremque amet nihil voluptatum a sed at facere odit corporis sit veritatis ullam quae.</div>
+
+        </div>
+
+    </div>
+  
+</body>
+</html>
+

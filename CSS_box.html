@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-BOX</title>
+</head>
+
+<style>
+
+    *{
+        margin: 0;
+        padding:0;
+    }
+    .box {
+
+        background: aqua;
+    }
+
+    .box1{
+        color: yellow;
+        padding: 10px;
+        margin: 15px 55px;
+        border: 2px solid blue;
+        height: 200px;
+        box-sizing: border-box; 
+         /* box sizing adjust height/width with peding and border not margin  */
+    }
+
+    .box2{
+        color: red;
+        padding: 10px;
+        margin: 25px; 
+        border: 2px solid black;
+        height: 200px;
+        box-sizing: border-box;
+    }
+/*in margin collaps 2 margin adjust margin not repeat ex: margin1 = 25px margin2 = 35px so where they touch the margin area is 35px amd same margin same area  */
+
+</style>
+
+<body>
+
+    <div class="box box1">I am a box </div>
+    <div class="box box2">I am another box </div>
+    
+</body>
+</html>

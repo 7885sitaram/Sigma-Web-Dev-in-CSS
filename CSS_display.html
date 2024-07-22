@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISPLAY</title>
+</head>
+
+<style>
+    .box{
+        border: 2px solid red;
+        background: yellow;
+        /* display: inline; */
+        display: inline-block; /* inline use for convert block element to inline element but the issue is they cant apply in margin padding so solve the issue use inline-block property
+        2. also not effect width */
+        margin: 20px;
+        padding: 25px;
+        width: 300px;
+
+    }
+
+     .box1{    
+         /* display: none;  */    /* in none delete with space */
+         visibility: hidden;      /* in visibility delete  without space */
+     
+    } 
+
+    span{
+        color: red;
+        background: green;
+        border: 2px solid blue;
+        display: block;  /* block use for convert inline element to block element */
+        margin: 25px;
+        padding: 25px;
+    }
+
+    .red{
+       
+        color: red;
+        background: paleturquoise;
+        border: 2 px solid greenyellow;
+        margin: 25px;
+        padding: 30px;
+        width: 300px;
+        height: 400px;
+        display: flex;
+        /* justify-content: center is use for center the content*/
+    
+    }
+
+
+</style>
+
+<body>
+    <div class="box">
+        this is box
+    </div> <br>
+
+    <div class="box box1">this is another box</div>
+
+    <span>this is span </span>
+    <span>this is another span</span>
+
+    <div class="red"><div class="me">hello i am jigs</div > </div>
+    
+</body>
+</html>

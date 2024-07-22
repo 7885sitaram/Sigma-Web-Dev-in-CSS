@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPECIFICITY</title>
+</head>
+<style>
+
+    h1{
+        color: aqua;
+    }
+
+    .yellow{
+        color: yellow;
+    }
+
+    .red{
+        color: red;
+    }
+
+    .blue{
+        color: blue;
+    }
+
+    h2{
+        color: red !important; /* !important have first priority */ 
+    }
+
+</style>
+
+<!--cascade algo rule 
+1.Position and order of appearance: the order in which your CSS rules appear
+
+2.Specificity: an algorithm that determines which CSS selector has the strongest match
+Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector
+
+3.Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS
+
+4.Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type
+
+
+must check cwh notes for more clearence 
+Lets look into all these one by one -->
+<body>
+    <div>
+        <h1 class="yellow red blue">welcome to web world</h1>
+        <h2 style="color: blueviolet;">this is me </h2>
+        <a href="https://www.codewithharry.com">CWH</a>
+    
+    </div>
+</body>
+</html>

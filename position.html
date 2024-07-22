@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Position</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent{
+
+            margin: 45px;
+            padding: 35px;
+            border: 3px solid purple;
+            height: 1500px;
+            /* position: absolute; */
+            /* transform: translate(0);*/
+            /* filter: invert(0); */
+            /* perspective: 0em; */
+        }
+
+        .box{
+
+            height: 200px;
+            width: 80vw;
+            margin: 10px;
+            border: 3px solid blue;
+        }
+
+         .box1{
+
+            background: red;
+            position: relative;
+            /* z index is use for to move up from overlap by someone but the
+            condition is give bigger value than 0 */
+            /* z-index: 1;  */
+
+            /* sticky is use in nav bar  */
+            /* height: 50px; */
+            /* position: sticky; */
+            /* top: 0px; */
+
+        }
+
+        .box2{
+
+            background: aqua;
+            position: relative;  
+            /* reletive is free from web page freely move and overlap other divs in every direction */
+
+            /* top: -100px;  */
+            /* right: 80px;  */
+            /* left: 50px; */
+            /* bottom: 100px;  */
+
+        }
+
+        .box3{
+
+            background: green;
+
+            /* absolute position they detech from the web and find parent tag if 
+            the parent tag is not in any position property than they move reletive 
+            parent of web 
+            but if the parent have any position property than they move 
+            to parent side */
+            /* Exception: not only property (transform , filter ,perdpective) are also consider
+            than move perent side */
+
+            /* position: absolute;  */
+            /* top: 0px; */
+            /* left: 0px;  */
+        }
+
+        .box4{
+
+            background: yellow;
+            /* fixed mean its fix on their place   */
+            /* position: fixed; */
+            /* top: 0px; */
+            /* right: 0px; */
+            /* height: 100px; */
+            
+        }
+
+        
+        .box5{
+
+        background: bisque;
+      
+
+        }
+    </style>
+</head>
+
+
+<!-- position : static is normal ,( default position) -->
+<body>
+
+    <div class="parent">
+
+    <div class="box box1">box 1</div>
+    <div class="box box2">box 2</div>
+    <div class="box box3">box 3</div>
+    <div class="box box4">box 4</div>
+    <div class="box box5">box 5</div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sit atque, error aperiam ipsam vitae, adipisci eveniet nisi vero, explicabo quae! Voluptatibus perspiciatis, rem fuga consequatur itaque blanditiis voluptate voluptatem sequi esse pariatur voluptates ad debitis explicabo nihil, repudiandae dolorem voluptas corrupti placeat doloremque, cumque tenetur asperiores architecto hic facere. Assumenda magni quasi, ea, asperiores numquam, magnam libero dicta exercitationem a veniam voluptate praesentium aspernatur iure iste. Vitae non qui perferendis placeat, molestias dolorem nostrum obcaecati optio harum? Fugiat odit magnam earum nulla autem amet. Sint perferendis facilis ex vitae magni totam, aliquid at, quae autem quam ut, quos dolorum!oluptatem sequi esse pariatur voluptates ad debitis explicabo nihil, repudiandae dolorem voluptas corrupti placeat doloremque, cumque tenetur asperiores architecto hic facere. Assumenda magni quasi, ea, asperiores numquam, magnam libero dicta exercitationem a veniam voluptate praesentium aspernatur iure iste. Vitae non qui perferendis placeat, molestias dolorem nostrum obcaecati optio harum? Fugiat odit magnam earum nulla autem amet. Sint perferendis facilis ex vitae magni totam, aliquid at, quae autem quam ut, quos dolorum!</p>
+
+</div>
+
+</body>
+</html>

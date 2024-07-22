@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHADO & OUTLINE</title>
+</head>
+
+<style>
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .box{
+
+        border: 2px solid red;
+        padding: 25px;
+        margin: 25px auto;
+        width: 80vw;
+
+        box-shadow: 5px 5px 50px 50px green ;
+        /* box-shadow: 5px 5px 20px 5px green inset ; */
+        /* horizontal , vertical , blurr , spread , color , inset  */
+    }
+
+    .text{
+
+        text-shadow: 5px 5px 4px  red;
+
+        border : 2px solid blue;
+        border-radius: 25px;
+
+        outline: 3px solid red;  /* not contain box size */
+        outline-offset: 15px;
+    }
+
+    
+
+</style>
+<body>
+    <div class="box "><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut unde earum suscipit laudantium deserunt? Voluptate delectus magni eligendi itaque? Dolorem?</p></div>
+
+    <div class="text"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id corrupti reiciendis unde laborum nobis debitis magni ullam aliquam placeat deserunt?</p></div>
+</body>
+</html>

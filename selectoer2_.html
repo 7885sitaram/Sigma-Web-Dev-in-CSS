@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector 2</title>
+
+    <style>
+
+        .boxes *{
+            border: 3px solid black;
+        }
+        .box:nth-child(1){
+            background: red;
+        }
+
+        [data-x="me"]{ 
+
+            padding-top: 15px;
+        }
+         
+        /* grouping selector */
+        /* p , a , box ,  [data-x="me"] {
+
+            color: blueviolet;
+        } */
+
+        .box:nth-child(even){
+            background: burlywood;
+        } 
+
+        .boxes::before{
+
+            content: "hello i am jigs";
+            color: blue;
+        }
+        /* before and after is add dynamically add content via css */
+        .boxes::after{
+
+            content: "see you ";
+            color: red;
+        }
+
+        ::selection{
+          /* selection is use for is use for heilighted select area */
+            color: aqua;
+            background: #000;
+        }
+
+        .box::first-letter{
+            color: orange;
+            font-size: 30px;
+        }
+
+        input::placeholder{
+            color: blue;
+            
+        }
+
+        input{
+            padding: 10px;
+            margin: 15px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Box 1</div>
+        <div class="box" data-x="me">Box 2</div>
+        <div class="box">Box 3</div>
+        <input type="text" placeholder="Enter your name ">
+    </div>
+</body>
+</html>

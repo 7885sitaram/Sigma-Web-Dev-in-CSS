@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Clear</title>
+
+    <style>
+
+        .cards{
+            border: 3px solid black;
+            /* flow root prevent from overflow */
+            display: flow-root;
+        }
+
+        .card{
+
+            border: 3px solid red;
+        }
+        img{
+            float: right
+            /* float mean they fix on place ; */
+        }
+
+        .card:nth-child(3){
+            /* clear isnot accept float property they clear the side */
+            /* clear: right; */
+            clear: both;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="cards">
+    <img src="nature.jpeg" alt="">
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque similique aliquam et beatae, deleniti dolore neque earum recusandae fugiat ex vel, minima, repellat quaerat quibusdam distinctio ut porro accusantium reprehenderit! Autem veritatis quibusdam accusantium voluptate asperiores rem architecto quidem assumenda expedita ullam tempore, nesciunt perspiciatis magnam, consequuntur iure nam nisi? Corrupti eum expedita, ullam fugiat iste nemo inventore animi quam nostrum quos, quas veritatis nesciunt suscipit. Provident amet placeat deserunt facere! Commodi laboriosam eius voluptas quaerat, ipsam hic pariatur vel amet minima ab dicta doloribus voluptate voluptatem libero accusamus corporis! Obcaecati nemo iure magnam quidem, facere esse at veritatis cupiditate nesciunt ipsam provident mollitia commodi fuga quod eveniet rerum similique placeat, ipsa quibusdam non eius autem expedita, incidunt beatae. Repudiandae repellendus, </p>
+    
+   
+        <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti numquam consectetur eaque alias, exercitationem nisi cumque sapiente velit officia soluta provident quasi atque, beatae vitae ullam dolorum suscipit blanditiis fugit nulla sequi rem. Sed, explicabo similique. Deserunt incidunt autem fugiat ab quam excepturi id consequatur suscipit labore, nulla cum, illo ad ratione soluta saepe facilis, dicta corrupti eius quo. Animi ipsum laborum beatae eum ut ullam qui, nostrum libero, tempora reiciendis, perspiciatis veritatis. Blanditiis iusto quas id vitae eaque aspernatur porro unde ratione corrupti nam nobis distinctio neque numquam fugit maiores, et rem deleniti iste delectus! Velit ea doloremque rerum atque provident possimus, non eligendi repellat quam! Doloribus earum velit exercitationem beatae ut sit impedit dolor, harum error fugiat placeat! Ab, non esse exercitationem odit minima, ratione distinctio, asperiores similique fugit suscipit architecto accusamus laboriosam deserunt. Ad quaerat vero sit quam quos sint explicabo temporibus cumque possimus, modi magni, consequatur, libero at tempore ducimus itaque ipsam quae numquam adipisci. Libero veritatis dolores sunt, quos esse distinctio velit repellendus! Tenetur porro ratione eum rem quam minus officiis impedit consequatur, quasi eaque veniam soluta. Ullam dignissimos sequi, odit cum iusto dolorum corporis quibusdam molestiae ad quod porro quo! Earum consequuntur minima iusto voluptatem esse necessitatibus officia aspernatur? Deserunt quo repellat accusamus voluptate sint error quae provident magnam est, saepe veritatis nemo reiciendis, dolorem architecto recusandae in mollitia voluptas nesciunt tempora assumenda itaque rerum tenetur tempore! Est facere repellat nobis laudantium voluptate ipsa aut provident natus, velit qui, aperiam quam id, eos nam. Repudiandae, enim voluptate magni cum vel perferendis? Earum nesciunt fugiat laudantium reprehenderit maiores, molestiae, laboriosam quia saepe soluta laborum inventore amet aperiam veritatis voluptatum, explicabo distinctio ad! Consequatur, facilis sequi omnis maiores repellat, excepturi soluta, facere officiis cupiditate qui nobis. Aliquid commodi, officia, quisquam amet reiciendis, qui corporis distinctio enim repellat eligendi sed ab harum eum esse error totam quas suscipit cupiditate quos. Autem recusandae dignissimos eaque fuga vitae placeat sapiente? Architecto, modi eum neque suscipit fugit distinctio dolor accusamus tempore qui natus dolorem repellat culpa at voluptatibus sit ab nulla voluptas?</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>
